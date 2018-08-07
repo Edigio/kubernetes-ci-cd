@@ -13,7 +13,7 @@ node {
         env.BUILDIMG=imageName
 
         stage "Build"    
-            sh "whereis docker"
+            sh "which docker"
             sh "docker build -t ${imageName} -f applications/hello-kenzan/Dockerfile applications/hello-kenzan"
             
         
